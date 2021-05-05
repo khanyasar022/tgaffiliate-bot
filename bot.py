@@ -17,10 +17,10 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 logger = logging.getLogger(__name__)
 #Read env variables
-TOKEN = os.environ[1700529172:AAHSw0EUsEJyywDXBRa7Ir4hdH4_-PnqJ_s]
-baseURL = os.environ[amazon.in]
-affiliate_tag = os.environ[yasarrkhan-21]
-HEROKU_URL = os.environ[https://git.heroku.com/tgaffiliate-bot.git]
+TOKEN = os.environ['TOKEN']
+baseURL = os.environ['baseURL']
+affiliate_tag = os.environ['affiliate_tag']
+HEROKU_URL = os.environ['HEROKU_URL']
 
 # Define a few command handlers. These usually take the two arguments update and
 # context. Error handlers also receive the raised TelegramError object in error.
