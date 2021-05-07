@@ -26,7 +26,13 @@ HEROKU_URL = os.environ['HEROKU_URL']
 # context. Error handlers also receive the raised TelegramError object in error.
 def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="Hi! This bot responds to amazon links by adding an affiliate code! ")
+    
+def help_command_handler(update, context):
+    """help handler"""
+    print(context.args)
 
+    affiliate_tag=context.args[0]
+    
 # Create the new URL with the refer tag
 def newReferURL(pcode):
     return baseURL+pcode+"?tag="+affiliate_tag
